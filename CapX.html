@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CapX - AI-powered trading platform</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="CapX.css">
+</head>
+<body>
+    <section id="question-page">
+        <div class="logo-container">
+            <div class="question-header">
+                <div class="nav-logo border">
+                    <div class="logo"></div>
+                </div>
+            </div>
+            <div class="question-box-1">
+                <div id="question-card-1" class="question-container-1">
+                    <div class="close-button">
+                        <i class="fa-solid fa-xmark" onclick="closeQuestion()"></i>
+                    </div>
+                    <div class="question-body">
+                        <h1>Have you ever <span>engaged</span> <br> in <span>high-frequency</span> <br> trading strategies?</h1>
+                        <div class="button-container">
+                            <button class="yes-button" onclick="goToNextSection()">Yes</button>
+                            <button class="no-button" onclick="goToNextSection()">No</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="question-box-2">
+                <div id="question-card-2" class="question-container-2" style="display: none;">
+                    <div class="close-button">
+                        <i class="fa-solid fa-xmark" onclick="closeQuestion()"></i>
+                    </div>
+                    <div class="question-body">
+                        <h1>What do you find <br> <span>most challenging</span> <br> about trading?</h1>
+                        <input type="text" id="answer" placeholder="Enter your answer here..." class="input" required>
+                        <br>
+                        <button class="next-button" onclick="nextQuestion(2)">Next</button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="question-box-3">
+                <div id="question-card-3" class="question-container-3" style="display: none;">
+                    <div class="close-button">
+                        <i class="fa-solid fa-xmark" onclick="closeQuestion()"></i>
+                    </div>
+                    <div class="questions-body">
+                        <h1>Which of these <br> problems has <br> affected you <br> the most?</h1>
+                        <div class="buttons-container">
+                            <button class="option-button">Knowledge gap in understanding the basic trading terms</button>
+                            <button class="option-button">Too much noise in the market distracts you from the correct information</button>
+                            <button class="option-button">Trading seems too complex and no clear trusted learning path to get started</button>
+                            <button class="option-button">Suffering too much losses in the market</button>
+                            <button class="option-button">Making rash decisions or quit the stock market due to lack of time</button>
+                            <button class="option-button">Don't know why you are making or losing money</button>
+                            <button class="submit-button" onclick="goToResult()">Submit</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="title-page" style="display: none;">
+        <header>
+            <div class="navbar">
+                <div class="nav-logo border">
+                    <div class="logo"></div>
+                </div>
+                <p class="line">|</p>
+                <div class="join">
+                    <button class="button">Join waitlist</button>
+                </div>
+                <p class="line">|</p>
+                <div class="nav-address border">
+                    <div class="add-icon">
+                        <i class="fa-solid fa-bars"></i>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div class="msg">
+            <h1>An AI-powered <br>trading platform that <br>works as your <br>personal assistant</h1>
+            <p>research to investing, all-in-one place</p>
+        </div>
+    </section>
+
+    <script src="CapX.js"></script>
+</body>
+</html>

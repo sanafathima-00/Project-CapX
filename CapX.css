@@ -1,0 +1,293 @@
+body {
+    margin: 0;
+    border: border-box;
+    background-color: #101115;
+    color: #fff;
+    font-family: "Calibri";
+}
+
+#question-page, #title-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.logo-container {
+    background-color: #212121;
+    width: 100%;
+    height: 100vh;
+}
+
+.question-box-1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5%;
+}
+
+.question-container-1 {
+    background-color: black;
+    width: 65%;
+    height: 50%;
+    padding: 20px;
+    border: 1px solid rgb(65, 65, 65);
+    border-radius: 20px;
+    text-align: left;
+}
+
+.question-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.question-body h1 {
+    margin-bottom: 20px;
+    margin-top: -20px;
+    margin-left: 20px;
+    font-size: 4rem;
+    color: white;
+}
+
+.question-body span {
+    margin-bottom: 20px;
+    font-size: 4rem;
+    color: orange;
+}
+
+
+.button-container {
+    display: flex;
+    justify-content: left;
+    gap: 20px;
+    margin-top: 30px;
+    margin-bottom: 50px;
+    margin-left: 20px;
+
+}
+
+.yes-button {
+    background-color: orange;
+    color: black;
+    border: none;
+    padding: 10px 50px;
+    border-radius: 30px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.no-button {
+    background-color: grey;
+    color: white;
+    border: none;
+    padding: 10px 50px;
+    border-radius: 30px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.close-button {
+    cursor: pointer;
+}
+
+.close-button i {
+    color: gray;
+    font-size: 20px;
+    margin: 25px;
+    display: flex;
+    align-items: end;
+    justify-content: end;
+}
+
+.question-container-2 {
+    background-color: black;
+    width: 60%;
+    height: 50%;
+    padding: 20px;
+    border: 1px solid rgb(65, 65, 65);
+    border-radius: 20px;
+    text-align: left;
+}
+
+.question-box-2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -80px;
+}
+
+.question-body input {
+    width: 50%;
+    padding: 10px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    margin-left: 20px;
+    border-radius: 10px;
+    border: none;
+    font-size: 1rem;
+}
+
+.question-body input:focus{
+    outline: 4px solid orange;
+}
+
+.next-button{
+    background-color: orange;
+    color: black;
+    border: none;
+    padding: 10px 50px;
+    border-radius: 30px;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-left: 20px;
+}
+
+.question-box-3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0px;
+}
+
+.question-container-3 {
+    background-color: black;
+    width: 65%;
+    height: 50%;
+    padding: 20px;
+    border: 1px solid rgb(65, 65, 65);
+    border-radius: 20px;
+    text-align: left;
+}
+
+.buttons-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    flex: 1;
+    align-items: center;
+    margin-top: -60px;
+}
+
+.questions-body {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 30px;
+    gap: 20px;
+}
+
+.left-side {
+    flex: 1;
+}
+
+.questions-body h1{
+    padding: 30px;
+    margin: 0px;
+    font-size: 3rem;
+    text-align: left;
+    display: flex;
+    flex-direction: row;
+}
+
+.option-button, .submit-button {
+    width: 100%;
+    max-width: 400px;
+    height: 50px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    padding: 10px 30px;
+}
+
+.option-button {
+    border: 1px solid orange;
+    background-color: #212121;
+    color: white;
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+.option-button:hover{
+    outline: 2px solid orange;
+}
+
+.option-button:focus {
+    background-color: orange;
+    color: black;
+}
+
+.submit-button {
+    background-color: orange;
+    color: black;
+    border: none;
+    padding: 10px 50px;
+    margin-top: 20px;
+    border-radius: 30px;
+    font-size: 1rem;
+    cursor: pointer;
+    max-width: 100px;
+    height: 30px;
+}
+
+.navbar {
+    height: 60px;
+    background: #212121;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 50px 450px;
+    border-radius: 10px;
+}
+
+.nav-logo {
+    height: 35px;
+    width: 100px;
+}
+
+.logo {
+    background-image: url("CapX_logo.png");
+    background-size: cover;
+    height: 40px;
+    width: 100%;
+}
+
+.button {
+    color: black;
+    background-color: orange;
+    border: none;
+    font-size: 1rem;
+    font-weight: 500;
+    padding: 10px 20px;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+.line {
+    color: grey;
+}
+
+.add-icon {
+    color: orange;
+    cursor: pointer;
+}
+.msg{
+    margin: 75px;
+    font-size: 2rem;
+    text-align: center;
+    align-items: center;
+}
+
+.msg h1{
+    font-weight:900;
+}
+
+.msg p{
+    color: rgb(255, 234, 196);
+    font-size: 1.5rem;
+}
